@@ -1,1 +1,1 @@
-# Pharo image configuration script generator 
+Generator for my Pharo configuration
