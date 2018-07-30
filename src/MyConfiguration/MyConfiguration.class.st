@@ -25,8 +25,11 @@ actions add: (StartupAction
 			add: (StartupAction
 						name: 'Fonts'
 						code: [
-										StandardFonts defaultFont: (LogicalFont familyName: 'Source Code Pro Regular' 
-																				   					pointSize: 13).
+                    FreeTypeFontProvider current
+                                         updateFontsFromSystem;
+	                                       updateAvailableFontFamilies.
+										StandardFonts defaultFont: (LogicalFont familyName: 'Hack' 
+																				   					        pointSize: 12).
 										GraphicFontSettings resetAllFontToDefault]);
 			add: (StartupAction 
 						name: 'GitHub'
