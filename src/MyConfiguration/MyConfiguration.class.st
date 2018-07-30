@@ -1,5 +1,11 @@
-setup
-setup
+Class {
+	#name : #MyConfiguration,
+	#superclass : #Object,
+	#category : #MyConfiguration
+}
+
+{ #category : #setup }
+MyConfiguration class >> setup [
 
 | actions |
 
@@ -34,3 +40,4 @@ StartupPreferencesLoader default
 	addAtStartupInPreferenceVersionFolder: actions named: 'IgorSettings.st'.
 
 StartupPreferencesLoader default executeAtomicItems: actions.
+]
